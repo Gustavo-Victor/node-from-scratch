@@ -1,11 +1,21 @@
-import { createServer } from "node:http"; 
+import { fastify } from "fastify";
 
-const server = createServer((req, res) => {
-    console.log("oi");
-    res.write('<h1>Hello</h1>'); 
-    return res.end('No more things will be printed after me...')
+const server = fastify(); 
+
+server.get('/', () => {
+    return 'Hello World!'; 
 }); 
 
-server.listen(4000); 
+server.get('/rocketseat', () => {
+    return 'Hello Rocketseat!'; 
+}); 
 
+server.get('/node', () => {
+    return 'Hello Node!'; 
+}); 
+
+
+server.listen({ 
+    port: 4000, 
+}); 
 
