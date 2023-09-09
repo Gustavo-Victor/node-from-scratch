@@ -1,0 +1,18 @@
+{
+  "name": "node-from-scratch",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An application to learn about Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --no-warnings server.js"
+  },
+  "keywords": [],
+  "author": "Gustavo Souza",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.22.2"
+  }
+}
