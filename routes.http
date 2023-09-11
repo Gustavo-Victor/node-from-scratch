@@ -2,7 +2,7 @@ GET http://localhost:4000/videos
 
 ### 
 
-GET http://localhost:4000/videos?search=node 
+GET http://localhost:4000/videos?search=01 
 
 
 ### 
@@ -11,22 +11,22 @@ POST http://localhost:4000/videos
 Content-Type: application/json 
 
 { 
-    "title": "My node video 03",
-    "description": "ff saf fd sa fsa fsa",
-    "duration": 30
+    "title": "My video 05",
+    "description": "ff saf fd sa fsa abc fsa",
+    "duration": 50
 }
 
 ### 
 
-PUT http://localhost:4000/videos/b52b33a2-5e5c-491b-857a-1a7c93161e93
+PUT http://localhost:4000/videos/779664cc-2967-4dfe-a0e7-e8c6de4629f3
 Content-Type: application/json 
 
 { 
-    "title": "My video 01 edit",
+    "title": "My video 03 edit",
     "description": "ff saf sa fsa fsa edit",
-    "duration": 130
+    "duration": 160
 }
 
 ### 
 
-DELETE http://localhost:4000/videos/b52b33a2-5e5c-491b-857a-1a7c93161e93
+DELETE http://localhost:4000/videos/1e8ba3b0-58c6-45f4-8d2f-289d94dc9d20
